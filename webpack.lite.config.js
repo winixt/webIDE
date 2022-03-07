@@ -4,7 +4,7 @@ const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const webpack = require('webpack');
 const path = require('path');
 const darkTheme = require('@ant-design/dark-theme');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserJSPlugin = require('terser-webpack-plugin');
 
 const tsConfigPath = path.join(__dirname, './tsconfig.json');
@@ -144,7 +144,7 @@ module.exports = {
     mainFields: ['loader', 'browser', 'module', 'main'],
   },
   optimization: {
-    minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
+    minimizer: [new TerserJSPlugin({}), new CssMinimizerPlugin({})],
   },
   plugins: [
     new HtmlWebpackPlugin({
