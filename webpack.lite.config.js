@@ -108,6 +108,7 @@ module.exports = {
             loader: "less-loader",
             options: {
               lessOptions: {
+                strictMath: false,
                 javascriptEnabled: true,
               },
             },
@@ -125,6 +126,7 @@ module.exports = {
             loader: "less-loader",
             options: {
               lessOptions: {
+                strictMath: false,
                 javascriptEnabled: true,
                 modifyVars: darkTheme
               }
