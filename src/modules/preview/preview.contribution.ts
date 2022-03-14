@@ -13,7 +13,8 @@ export class PreviewContribution implements ComponentContribution {
                 component: PreviewComp,
             },
             {
-            },
+                containerId: 'page-preview'
+            }
         );
     }
 }

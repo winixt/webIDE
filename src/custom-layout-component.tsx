@@ -14,7 +14,7 @@ export function LayoutComponent() {
         <SlotRenderer color={colors.editorBackground} flex={2} flexGrow={1} minResize={200} slot='main' />
         <SlotRenderer color={colors.panelBackground} flex={1} defaultSize={layout.bottom?.size} minResize={160} slot='bottom' />
       </SplitPanel>
-      <SlotRenderer slot='right' defaultSize={layout.right?.currentId ? (layout.right?.size || 384) : 49} />
+      <SlotRenderer slot='right' />
     </SplitPanel>
     <SlotRenderer color={colors.statusBarBackground} defaultSize={24} slot='statusBar' />
   </BoxPanel>;
