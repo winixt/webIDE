@@ -34,7 +34,6 @@ module.exports = {
     })],
     alias: {
       'fs': 'browserfs/dist/shims/fs.js',
-      'crypto': '/src/crypto.ts',
       'buffer': 'browserfs/dist/shims/buffer.js',
       'path': 'browserfs/dist/shims/path.js',
       'processGlobal': 'browserfs/dist/shims/process.js',
